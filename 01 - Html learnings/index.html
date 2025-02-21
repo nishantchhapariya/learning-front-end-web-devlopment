@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page contains all things i am learning html.">
+    <meta name="author" content="Nishant Chhapariya">
+    <title>HTML Lesson</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- this is how you link a style sheet to html file -->
+    <link rel="icon" href="html5.png" type="image/x-icon">
+    <!-- this to link fav icon  -->
+</head>
+
+<body>
+    <header>
+
+        <h1>Hello World!</h1>
+
+        <nav aria-label="primary-navigation">
+            <ul>
+                <li>
+                    <a href="#html">Learning HTML</a>
+                </li>
+                <li>
+                    <a href="#vication">Planning a vacation</a>
+                </li>
+                <li>
+                    <a href="#list">Learning lists</a>
+                </li>
+                <li>
+                    <a href="#link">Learning about Links</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact Me</a>
+                </li>
+
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <article id="html">
+            <h2>I am learnnig HTML</h2> <!-- this is how you write a heading -->
+            <p>This is my webpage</p> <!-- this is how you write a paragraph -->
+            <!-- this is a image tag to input images into webpages. alt text, height or width is required always but the title is not required -->
+            <img src="/img/html5.png" alt="html5 logo" title="I am learnig HTML" width="300" height="300">
+
+            <p>
+                <!-- (br-tag) this is a line brake tag -->
+                <br> I am learnig this via Dave Gray
+                <br> This is provided by roadmap.sh
+                <br> And the Official Resource From <abbr title="Morzilla Developer Network">MDN</abbr>
+                <!-- The HTML <abbr> tag is used to define abbreviations and acronyms in a web page. It provides more information about the abbreviation or acronym, which can help clarify the content of the page.  -->
+            </p>
+        </article>
+        
+        <hr> <!-- this is how you write a horizontal line -->
+
+        <article id="vication">
+            <h2>Planning a vication.</h2>
+            <p>I have been wroking realy hard.</p>
+            <p>I live in Gwalior
+            <address>
+                432, Tansen Nagar, Gwalior
+                <br>Madhya Pradesh, India
+            </address>
+            </p>
+
+            <h3>Places I like to visit...</h3>
+            <p>I have heard the good things about <strong>Indore</strong>.
+                <!-- The HTML strong tag, ** , indicates that the text within it is important, serious, or urgent. -->
+            </p>
+            <!-- Image loading attribute is set to lazy which will dealy the image loading time for the images which are below the ferst section on web page. This will fasten then our loading of our web page.-->
+            <img src="/img/indore1.jpg" alt="imdore visiting places" width="450" height="250" loading="lazy">
+            <p>I have heard good things About Caribbean.</p>
+            <img src="/img/caribbean.jpg" alt="caribbean beach" width="450" height="250" loading="lazy">
+
+            <h3>Places I like to Avoid...</h3>
+            <p>Anywhere where no Internet Acess <em>No Way!</em>
+                <!-- The <em> tag is used to emphasize text in a document. It's usually displayed in italics. The <em> tag is recommended for website optimization because it signals to search engines that the content is important  -->
+            </p>
+        </article>
+
+        <hr>
+
+        <article id="list">
+            <h2>This is the usage of list items</h2>
+            <h3>My Daily Schedule</h3>
+            <!-- ol tag is used to create ordered list. li tag is used inside this to add the list items.  -->
+            <p>Let me tell you how:</p>
+            <ol>
+                <li>.. I learn more about web dev.</li>
+                <li>...I plan out my schedule.</li>
+                <li>...I use resources from <abbr title="Mozilla Developer Network">MDN</abbr>.</1i>
+            </ol>
+
+            <h3>Place I'd Like to Visit</h3>
+            <!-- This is the usage of unordered list and tag is ul. -->
+            <ul>
+                <li>
+                    <p>I've heard good things about the Caribbean.</p>
+                </li> <!-- list items can also nest items inside them  -->
+                <li>
+                    <p>I've heard good things about going here: </p>
+                    <address>
+                        Margaritaville Island Reserve Riviera
+                        Cancún<br>
+                        Bahia Petempich Puerto Morelos,
+                        Mexico<br>
+                        Colonia Morelos, México 77580
+                    </address>
+
+                </li>
+            </ul>
+
+            <h3>how to description list items</h3>
+            <!-- The <dl> tag defines a description list. -->
+            <dl>
+                <!-- The <dl> tag is used in conjunction with <dt> (defines terms/names) and <dd> (describes each term/name). -->
+                <dt>Coffee</dt>
+                <dd>Black hot drink</dd>
+                <dt>Milk</dt>
+                <dd>White cold drink</dd>
+            </dl>
+        </article>
+
+        <hr>
+
+        <article id="link">
+            <h3>How to use Liks</h3>
+            <p>...I use resources from <abbr title="Mozilla Developer Network">
+                    <a href="https://developer.mozilla.org/">MDN</a> </abbr>.</p>
+        </article>
+        <hr>
+        <article id="contact">
+            <h2>Contact Me</h2>
+            <p></p>
+        </article>
+
+    </main>
+    <hr>
+    <footer>
+        <p>&lt; &lt; &lt; &copy; <a href="about.html">Nishant Chhapariya</a> &gt; &gt; &gt;</p>
+        <p>
+            <a href="#">Back to top</a>
+        </p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    border: 2px dashed red;
+    font-size: 1.5rem;
+    /* Margin */
+    /* margin-top: 1.5em;
+    margin-bottom: 2em;
+    margin-left: 3em;
+    margin-right: 4em; */
+    /* or you can do this */
+    /* margin: 1.5em 1em 3em 4em; */
+    margin: 1.5em;
+
+    padding: 1.5rem;
+    outline: 5px solid purple;
+    outline-offset: 5px;
+}

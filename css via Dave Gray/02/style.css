@@ -1,0 +1,26 @@
+*{
+    font-family: monospace;
+}
+body{
+    font-size: 22px;
+    
+}
+h1,h2{
+    color: blue;
+}
+p{
+    color: red;
+}
+
+.gray{
+    color: gray;
+}
+
+#second{
+    /* we do not use id selectors in css as it has more important places which they can be used. */
+    font-style: italic;
+}
+.hilight{
+    color: gold;
+    text-transform:uppercase
+}
