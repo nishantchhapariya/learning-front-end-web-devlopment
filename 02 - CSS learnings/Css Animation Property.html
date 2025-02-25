@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Animations</title>
+    <style>
+        .container {
+            background-color: blue;
+            height: 80vh;
+            width: 90vw;
+        }
+
+        .box {
+            width: 34px;
+            height: 45px;
+            background-color: red;
+
+            /* animation-name: ani-1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-direction: alternate-reverse;
+            animation-play-state: running; */
+
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+            animation: ani-2 2s ease-in-out 1s 5,
+                ani-1 2s ease-in-out 1s 2;
+        }
+
+        @keyframes ani-1 {
+            from {}
+
+            to {
+                transform: translateX(400px);
+            }
+        }
+
+        @keyframes ani-2 {
+            0% {
+                transform: rotate(50deg);
+            }
+
+            25% {
+                transform: rotate(100deg);
+            }
+
+            50% {
+                transform: rotate(150deg);
+            }
+
+            75% {
+                transform: rotate(200deg);
+            }
+
+            100% {
+                transform: rotate(250deg);
+            }
+
+        }
+    </style>
+</head>
+<div class="container">
+    <div class="box"></div>
+
+</div>
+
+<body>
+
+</body>
+
+</html>
