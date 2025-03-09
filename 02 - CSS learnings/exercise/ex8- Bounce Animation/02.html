@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* General Styling */
+body {
+    background-color: #0D0D0D;
+    color: #FFFFFF;
+    font-family: 'Arimo', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #0D0D0D;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Hero Title */
+.hero-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(4rem, 4.2857rem + -1.4286vw, 3rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+/* Hero Subtitle */
+.hero-subtitle {
+    font-size: clamp(2.375rem, 2.4821rem + -0.5357vw, 2rem);
+    font-weight: 600;
+    color: #D1D1D1;
+    line-height: 1.3em;
+    margin-bottom: 16px;
+}
+
+/* Bullet Points */
+.hero-benefits {
+    list-style: none;
+    padding: 0;
+    font-size: clamp(1.5rem, 1.5714rem + -0.3571vw, 1.25rem);
+    font-weight: 500;
+    line-height: 1.4em;
+    margin-bottom: 24px;
+}
+
+.hero-benefits li {
+    margin-bottom: 8px;
+}
+
+/* Highlight */
+.highlight {
+    color: #FACC15;
+    font-weight: 700;
+}
+
+/* Desire Statement */
+.hero-desire {
+    font-size: clamp(1.5rem, 1.5714rem + -0.3571vw, 1.25rem);
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 1.4em;
+    margin-bottom: 24px;
+}
+
+/* CTA Button */
+.cta-button {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(1.125rem, 1.1607rem + -0.1786vw, 1rem);
+    font-weight: 700;
+    background-color: #FACC15;
+    color: #0D0D0D;
+    padding: 16px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #E5B60F;
+    box-shadow: 0px 4px 10px rgba(250, 204, 21, 0.3);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero {
+        text-align: center;
+    }
+    .hero-title {
+        font-size: clamp(3rem, 3.5rem, 2.5rem);
+    }
+    .hero-subtitle {
+        font-size: clamp(2rem, 2.2rem, 1.8rem);
+    }
+    .hero-desire {
+        font-size: clamp(1.25rem, 1.5rem, 1.125rem);
+    }
+    .cta-button {
+        padding: 12px 24px;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Your Business Deserves More Than a Generic Website</h1>
+            <p class="hero-subtitle">
+                Most agencies treat you like just another client. I don’t.  
+                As a <span class="highlight">solo web designer</span>, I provide:  
+            </p>
+            <ul class="hero-benefits">
+                <li>✅ Direct collaboration—no middlemen</li>
+                <li>✅ Flexible pricing & project scope</li>
+                <li>✅ A website that fits <span class="highlight">YOUR brand</span>, not a template</li>
+            </ul>
+            <p class="hero-desire">
+                🔥 Wouldn’t it be amazing to have a website that not only looks incredible  
+                but also <span class="highlight">turns visitors into paying clients?</span>
+            </p>
+            <div class="hero-cta">
+                <a href="#contact" class="cta-button">💡 Claim Your Free Strategy Call</a>
+            </div>
+        </div>
+    </section>
+    
+</body>
+
+</html>

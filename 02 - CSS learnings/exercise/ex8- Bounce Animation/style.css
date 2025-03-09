@@ -1,0 +1,107 @@
+/* ||Blue Container box */
+.container {
+  position: relative;
+  height: 80vh;
+  width: 80vw;
+  background-color: blue;
+}
+
+/* ||Red Ball */
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* || Animation of ball */
+.ball {
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  /* animation: movement 2s cubic-bezier(0.4, 0, 1, 1) 1s infinite forwards; */
+
+  animation-name: movement;
+  /*|| name of the animation */
+  animation-duration: 2s;
+  /*|| duration of the animation */
+  animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  /*|| timing function of the animation */
+  animation-delay: 1s;
+  /*|| delay of the animation */
+  animation-iteration-count: 1;
+  /*|| iteration count of the animation */
+  animation-direction: forwards;
+  /*|| direction of the animation */
+  animation-fill-mode: none;
+  /*|| fill mode of the animation */
+}
+
+/* Movement created by me */
+/* @keyframes movement {
+  0% {
+    transform: translateX(0px) translateY(0px);
+  }
+  10% {
+    transform: translateX(100px) translateY(-100px);
+  }
+  20% {
+    transform: translateX(200px) translateY(0px);
+  }
+  30% {
+    transform: translateX(300px) translateY(-60px);
+  }
+  40% {
+    transform: translateX(400px) translateY(0px);
+  }
+  50% {
+    transform: translateX(500px) translateY(-30px);
+  }
+  60% {
+    transform: translateX(600px) translateY(0px);
+  }
+  
+} */
+
+/* || Movement improved by GPT */
+@keyframes movement {
+  0% {
+    transform: translateX(0px) translateY(0px);
+  }
+
+  10% {
+    transform: translateX(100px) translateY(-100px);
+  }
+
+  20% {
+    transform: translateX(200px) translateY(0px);
+  }
+
+  30% {
+    transform: translateX(300px) translateY(-60px);
+  }
+
+  40% {
+    transform: translateX(400px) translateY(0px);
+  }
+
+  50% {
+    transform: translateX(500px) translateY(-30px);
+  }
+
+  60% {
+    transform: translateX(600px) translateY(0px);
+  }
+
+  80% {
+    transform: translateX(700px) translateY(-10px);
+  }
+
+  /* New */
+  100% {
+    transform: translateX(800px) translateY(0px);
+  }
+
+  /* New */
+}
